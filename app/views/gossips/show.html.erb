@@ -1,0 +1,8 @@
+<h1>Gossip no. <%= @gossip.id %></h1>
+
+<p><%= @gossip.anonymous_author %> says that :<br >
+
+<%= @gossip.content %></p>
+
+<p><%= link_to 'Edit this gossip', edit_gossip_path %> 
+<%= link_to 'Index Gossip', gossips_path %></p>

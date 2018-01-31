@@ -1,0 +1,17 @@
+<h1>Edit this gossip</h1>
+
+
+<%= form_for @gossip, url: {action: "update"}, html: {class: "nifty_form"} do |f| %>
+	
+	<p><%= label_tag 'anonymous_author', 'Update that pen name :' %> <br >
+  <%= f.text_field :anonymous_author %></p>
+
+	<p><%= label_tag 'content', 'Update your gossip :' %><br >
+  <%= f.text_area :content %></p>
+
+  <p><%= f.submit "Update that bitch !" %></p>
+
+<% end %>
+
+<p>Unless you want to burn it to ashes 8)<br >
+<%= link_to 'Let\'s burn it !!!', @gossip, method: :delete %></p>
