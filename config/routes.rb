@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 	resources :gossips
+	root to: 'gossips#index'
 
   #get 'gossips/new', to: 'gossips#new'
   
